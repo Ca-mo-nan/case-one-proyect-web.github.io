@@ -1,1 +1,333 @@
+body{
+    background-color: white;
+}
+
+/*parte del logo*/
+
+.title-main{
+    background-color: #B16868;   
+    font-family: 'Nunito', sans-serif;
+    justify-content: left;
+}
+
+.img-logo{
+    width: 320px;
+    height: 100px;
+}
+
+.space{
+    background-color: rgb(170, 167, 167);
+    width: 100%;
+    height: 20px;
+}
+
+/*Barra de navegación*/
+
+.navbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-ul{
+    display: flex;
+    gap: 0 150px;
+    list-style: none;
+    font-size: 20px;
+    color: black;
+}
+
+.title-carta{
+    font-family: 'Rethink Sans', sans-serif;
+    text-align: center;
+}
+
+/*Noticias*/
+
+.news{
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+}
+
+.content-new{
+    display: flex;
+    background-color: #B16868;
+    height: 370px;
+    width: 1650px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.new-img{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+.new-info{
+    color: white;
+    padding: 30px 100px;
+}
+
+
+
+/*titulos*/
+
+h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+}
+
+/*cards*/
+.section-one{
+    max-width: 1800px;
+    margin: 0 auto;      
+    padding: 40px 20px;
+}
+
+.text-menu{
+    display: flex;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carousel-window {
+    overflow: hidden;
+    width: 1528px; /* 4 cards visibles */
+}
+
+.cards-carousel{
+    display: flex;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    transition: transform 0.4s ease;
+}
+
+.card{
+    background-color: #E59E9E;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+    margin: 15px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.arrow {
+    background-color: #B16868;
+    color: white;
+    border: none;
+    font-size: 28px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #9c5555;
+}
+
+.img-break{
+    width: 312px;
+    height: 208px;
+}
+
+h5{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+}
+
+p1{
+    font-size: 24px;
+}
+
+p2{
+    font-size: 16px;
+}
+
+/**/
+.cards-recommendations{
+    display: flex;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    gap: 30px 40px;
+    flex-wrap: wrap; 
+    width: 100%;
+    justify-content: center;
+}
+
+
+.card-recommendations{
+    background-color: #E59E9E;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+
+.center-conteiner{
+    align-items: center;
+}
+
+
+
+.img-reco{
+    width: 229px;
+    height: 160px;
+}
+
+/*responsive para dispositivos moviles*/
+
+/*tablet*/
+@media (max-width: 1024px) {
+
+    /* Navbar */
+    .navbar-ul {
+        gap: 0 60px;
+        font-size: 18px;
+    }
+
+    /* Noticias */
+    .content-new {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .new-info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Carrusel */
+    .carousel-window {
+        width: 760px; /* 2 cards */
+    }
+
+    .img-break {
+        width: 260px;
+        height: auto;
+    }
+}
+
+/*celular*/
+@media (max-width: 768px) {
+
+    /* Logo */
+    .img-logo {
+        width: 220px;
+        height: auto;
+    }
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    /* Noticias */
+    .content-new {
+        width: 95%;
+        border-radius: 15px;
+    }
+
+    .new-img img {
+        width: 200px;
+    }
+
+    /* Secciones */
+    h3 {
+        text-align: center;
+    }
+
+    /* Carrusel */
+    .carousel {
+        gap: 8px;
+    }
+
+    .carousel-window {
+        width: 360px; /* 1 card */
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    .img-break {
+        width: 300px;
+    }
+
+    /* Recomendaciones */
+    .cards-recommendations {
+        flex-direction: column;
+    }
+
+    .img-reco {
+        width: 180px;
+        height: auto;
+    }
+}
+
+/*celular pequeño*/
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p1 {
+        font-size: 20px;
+    }
+
+    p2 {
+        font-size: 14px;
+    }
+
+    .carousel-window {
+        width: 320px;
+    }
+
+    .img-break {
+        width: 260px;
+    }
+}
+
+
+
+
 
