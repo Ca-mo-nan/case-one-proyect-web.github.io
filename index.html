@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Menus</title>
+</head>
+<body>
+    <div class="title-main">
+            <img src="img/logo.png" class="img-logo">
+    </div>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-ul">
+                <li><a href="#breakfast">desayunos</a></li>
+                <li><a href="#breads">panes</a></li>
+                <li><a href="#foods">recomendaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="space"></div> <br><br>
+
+    <div class="news">
+        <div class="content-new">
+
+            <div class="new-img">
+                <h1>Lonchera nutritiva</h1>
+                <img src="img/fresa.png">
+            </div>
+        
+            <div class="new-info">
+                <p1>Todos los días podrás adquirir una lonchera nutritiva</p1> <br>
+                <p1>para tus hijos, preparada con alimentos saludables y</p1> <br>
+                <p1>equilibrados.</p1>
+                <br><br><br><br><br><br><br><br><br>
+                <p1>Cumple con el calendario nutritivo que pide el colegio</p1>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="title-carta">
+        <h1>CARTA</h1>
+    </div>
+
+    <section id="breakfast" class="section-one">
+        <h3>Desayunos</h3>
+        <div class="carousel">
+        <button class="arrow left" onclick="moveSlide('break-break', -1)">❮</button>
+            <div class="carousel-window">
+                <div class="cards-carousel" id="break-break">
+                    <div class="card">
+                        <h5>Quinua</h5>
+                        <img src="img/quinua.png" class="img-break">
+                        <p1>s/1.50</p1>
+                        <p2>Botella s/2.00</p2>
+                    </div>
+
+                    <div class="card">
+                        <h5>Soya</h5>
+                        <img src="img/soya.png" class="img-break">
+                        <p1>s/1.50</p1>
+                        <p2>Botella s/2.00</p2>
+                    </div>
+
+                    <div class="card">
+                        <h5>maca</h5>
+                        <img src="img/maca.png" class="img-break">
+                        <p1>s/1.50</p1>
+                        <p2>Botella s/2.00</p2>
+                    </div>
+
+                    <div class="card">
+                        <h5>café</h5>
+                        <img src="img/cafe.png" class="img-break">
+                        <p1>s/1.50</p1>
+                        <p2>Botella s/2.00</p2>
+                    </div>
+
+                    <div class="card">
+                        <h5>Jugo de naranja</h5>
+                        <img src="img/orange.png" class="img-break">
+                        <p1>s/3.00</p1>
+                        <p2>Botella s/4.00</p2>
+                    </div>
+
+                    <div class="card">
+                        <h5>Té</h5>
+                        <img src="img/te.png" class="img-break">
+                        <p1>s/2.00</p1>
+                        <p2>Botella s/1.50</p2>
+                    </div>
+
+                </div>
+            </div>
+            <button class="arrow right" onclick="moveSlide('break-break', 1)">❯</button>
+        </div>
+
+    </section>    
+
+    <section id="breads" class="section-one">
+        <h3>Panes</h3>
+        <div class="carousel">
+        <button class="arrow left" onclick="moveSlide('bread-break', -1)">❮</button>
+            <div class="carousel-window">
+                <div class="cards-carousel" id="bread-break">
+                    <div class="card">
+                        <h5>Pan con huevo</h5>
+                        <img src="img/pan-huevo.png" class="img-break">
+                        <p1>s/1.50</p1>
+                    </div>
+
+                    <div class="card">
+                        <h5>Pan con queso</h5>
+                        <img src="img/pan-queso.png" class="img-break">
+                        <p1>s/1.50</p1>
+                    </div>
+
+                    <div class="card">
+                        <h5>Pan con pollo</h5>
+                        <img src="img/pan-pollo.png" class="img-break">
+                        <p1>s/2.00</p1>
+                    </div>
+
+                    <div class="card">
+                        <h5>Pan con tortilla</h5>
+                        <img src="img/pan-torilla.png" class="img-break">
+                        <p1>s/2.50</p1>
+                    </div>
+
+                    <div class="card">
+                        <h5>Pan con camote</h5>
+                        <img src="img/pan-camote.png" class="img-break">
+                        <p1>s/2.00</p1>
+                    </div>
+
+                    <div class="card">
+                        <h5>Pan con platano</h5>
+                        <img src="img/pan-platano.png" class="img-break">
+                        <p1>s/2.50</p1>
+                    </div>
+
+                </div>
+            </div>
+            <button class="arrow right" onclick="moveSlide('bread-break', 1)">❯</button>
+        </div>
+
+    </section>
+
+    <section id="foods" class="section-one">
+        <h3>Recomendaciones</h3>
+        <div class="cards-recommendations">
+
+            <div class="card-recommendations">
+                <div card="recomend-img">
+                    <img src="img/quinua.png" class="img-reco">
+                    <img src="img/pan-huevo.png" class="img-reco">
+                    <img src="img/pan-huevo.png" class="img-reco">
+                </div>
+                <p1>s/4.50</p1>
+                <p2>Quinua + 2 panes con huevo</p2>
+            </div>
+
+             <div class="card-recommendations">
+                <div card="recomend-img">
+                    <img src="img/soya.png" class="img-reco">
+                    <img src="img/pan-pollo.png" class="img-reco">
+                    <img src="img/pan-pollo.png" class="img-reco">
+                </div>
+                <p1>s/4.50</p1>
+                <p2>Quinua + 2 panes con huevo</p2>
+            </div>
+    </section>
+    <br><br>
+    <script src="scripts/index.js" ></script>
+</body>
+</html>
