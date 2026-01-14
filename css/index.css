@@ -122,6 +122,8 @@ h3{
     transition: transform 0.4s ease;
 }
 
+/*cards decoración*/
+
 .card{
     background-color: #E59E9E;
     text-align: center;
@@ -202,18 +204,18 @@ p2{
 /*responsive para dispositivos moviles*/
 
 /*tablet*/
+/* TABLET */
 @media (max-width: 1024px) {
 
     /* Navbar */
     .navbar-ul {
-        gap: 0 60px;
+        gap: 60px;
         font-size: 18px;
     }
 
     /* Noticias */
     .content-new {
         width: 95%;
-        height: auto;
         flex-direction: column;
         align-items: center;
         padding: 20px;
@@ -226,22 +228,32 @@ p2{
 
     /* Carrusel */
     .carousel-window {
-        width: 760px; /* 2 cards */
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .cards-carousel {
+        display: flex;
+        width: max-content;
+        gap: 16px;
+    }
+
+    .card {
+        min-width: 45vw; /* 2 cards */
     }
 
     .img-break {
-        width: 260px;
+        width: 240px;
         height: auto;
     }
 }
 
-/*celular*/
+/* CELULAR */
 @media (max-width: 768px) {
 
     /* Logo */
     .img-logo {
-        width: 220px;
-        height: auto;
+        width: 200px;
     }
 
     /* Navbar */
@@ -263,70 +275,80 @@ p2{
     }
 
     .new-img img {
-        width: 200px;
+        width: 180px;
     }
 
-    /* Secciones */
     h3 {
         text-align: center;
     }
 
     /* Carrusel */
-    .carousel {
-        gap: 8px;
+    .carousel-window {
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
     }
 
-    .carousel-window {
-        width: 360px; /* 1 card */
+    .cards-carousel {
+        display: flex;
+        width: max-content;
+        gap: 12px;
     }
 
     .card {
-        margin: 10px 0;
+        min-width: 90vw; /* 1 card */
+        scroll-snap-align: start;
+        margin: 0 auto;
     }
 
     .img-break {
-        width: 300px;
+        width: 260px;
+    }
+
+    /* Flechas fuera en móvil */
+    .arrow {
+        display: none;
     }
 
     /* Recomendaciones */
     .cards-recommendations {
         flex-direction: column;
+        align-items: center;
     }
 
     .img-reco {
-        width: 180px;
-        height: auto;
+        width: 160px;
     }
 }
 
-/*celular pequeño*/
+
+/* CELULAR PEQUEÑO */
 @media (max-width: 480px) {
 
     h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     h3 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     p1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     p2 {
         font-size: 14px;
     }
 
-    .carousel-window {
-        width: 320px;
+    .card {
+        min-width: 95vw;
     }
 
     .img-break {
-        width: 260px;
+        width: 240px;
     }
 }
-
 
 
 
