@@ -237,6 +237,7 @@ p2{
         display: flex;
         width: max-content;
         gap: 16px;
+        align-items: center;
     }
 
     .card {
@@ -294,6 +295,7 @@ p2{
         display: flex;
         width: max-content;
         gap: 12px;
+        align-items: center;
     }
 
     .card {
@@ -350,6 +352,7 @@ p2{
         width: 240px;
     }
 }
+
 
 
 
